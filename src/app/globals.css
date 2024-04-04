@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  @font-face {
+    font-family: space-mono;
+    src: url('../fonts/SpaceMono-Bold.ttf');
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +37,36 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.header {
+  color: #335859;
+  letter-spacing: .40em;
+text-align: center;
+}
+
+input:focus {
+  outline: none;
+  border: 0px;
+}
+
+.column {
+  width: 380px;
+}
+
+.smallTxt {
+  font-size: 13px;
+}
+
+.resetBtn {
+  background-color: #0C686D;
+  color: #035D62;
+}
+.Bg{
+
+    background-color: hsl(185, 41%, 84%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
